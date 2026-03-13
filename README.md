@@ -74,7 +74,7 @@ The custom `ReacherEnv` (Gymnasium-compatible) simulates a 2-DOF planar arm with
 - **Part c — IK + Joint PD:** Analytical inverse kinematics followed by independent joint-space PD controllers. Final gains: `Kp=20, Kd=10`.
 
 ### Reinforcement Learning
-- **Part d — N-Step SARSA:** On-policy RL over a discrete 9-action space `{-1, 0, +1}²`. Limited by coarse discretization causing bang-bang behavior (smoothness: 43.3).
+- **Part d — N-Step SARSA:** On-policy RL over a discrete 9-action space `{-1, 0, +1}²`, using a DQN-style neural network (2-layer MLP) as the Q-function approximator. Limited by coarse discretization causing bang-bang behavior (smoothness: 43.3).
 - **Part e — DDPG:** Off-policy actor-critic with continuous torque output `[-1,1]²`. Three configurations investigated:
   - **Config A** (100 ep, lightweight 64→32): Error 1.43
   - **Config B** (1000 ep, 256→128): Error 1.15
