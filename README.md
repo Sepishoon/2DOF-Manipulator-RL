@@ -12,13 +12,13 @@ A comparative study of **classical control** and **deep reinforcement learning**
 
 This project implements and compares four control strategies for a two-link planar reacher operating in a horizontal plane:
 
-| Method | Mean Tracking Error | Success Rate | Smoothness |
-|---|---|---|---|
-| Cartesian PD Control | 0.973 | 14.4% | 0.9 |
-| IK + Joint PD Control | 0.987 | **24.4%** | 1.7 |
-| N-Step SARSA | 1.773 | 0.0% | 43.3 |
-| DDPG (100 ep) | 1.369 | 0.0% | 2.4 |
-| DDPG (1000 ep, Config C) | **0.90** | — | — |
+| Method | Mean Tracking Error | Smoothness |
+|---|---|---|
+| Cartesian PD Control | 0.973 | 0.9 |
+| IK + Joint PD Control | 0.987 | 1.7 |
+| N-Step SARSA | 1.773 | 43.3 |
+| DDPG (100 ep) | 1.369 | 2.4 |
+| DDPG (1000 ep, Config C) | **0.90** | 2.4 |
 
 ---
 
